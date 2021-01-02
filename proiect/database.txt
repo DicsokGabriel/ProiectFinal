@@ -1,0 +1,27 @@
+CREATE TABLE products (   
+	ID int(4) NOT NULL AUTO_INCREMENT,
+    Name varchar(255) NOT NULL,
+    Img varchar(255),
+	Description text(255),
+    Quan int(2),
+    PRIMARY KEY (ID)
+);
+
+Select * from products;
+
+ALTER TABLE products
+ADD Description text;
+
+INSERT INTO products(Name,Img,Price,description) values("Assassin's Creed Valhalla","https://upload.wikimedia.org/wikipedia/ro/f/f8/ACValhalla.jpg", 259.98,"Assassin's Creed Valhalla is an open world action-adventure game, structured around several main story arcs and numerous optional side missions, called World Events. The player takes on the role of Eivor (/ˈeɪvɔːr/),[5] a Viking raider, as they lead their fellow Vikings against the Anglo-Saxon kingdoms. The player has the choice of playing Eivor as either male (voiced by Magnus Bruun), female (voiced by Cecilie Stenspil) or letting the game alternate between the two at key moments in the story, and is able to customise Eivor's hair, warpaint, clothing, armor, and tattoos. The variety of weapons available to the player has been expanded to include weapons such as flails and greatswords. Combat has been changed to allow dual wielding of almost any weapon, including shields, and every piece of gear that the player collects is unique. The Eagle Vision mechanic of previous titles will return in the form of Odin Sight. The player's companion animal is a raven named Sýnin (Old Norse for insight) who can be used to scout the nearby areas, much like previous avian companions had done in Origins and Odyssey, and other parts of the game world from afar before Eivor engages in combat. There is more focus on the stealth aspects for both traversing the game world and in combat. The social stealth concept from earlier Assassin's Creed games will return: Eivor can hide from enemies not only in stationary environmental objects, but can pull down their hood and slip into certain crowds to use them as cover. Eivor can feign death, use their raven to distract guards, and can access a hidden blade for near instantaneous assassinations. The game's key bosses will all, through specific combinations of approach, tactics, and weapon selection, be able to be assassinated through a single attack, but still can be defeated through numerous other routes.");
+
+
+INSERT INTO products(Name,Img,Price,description) values("The Witcher 3: Wild Hunt","https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt#/media/File:Witcher_3_cover_art.jpg", 199.99,"The Witcher 3: Wild Hunt is a 2015 action role-playing game developed and published by Polish developer CD Projekt Red and is based on The Witcher series of fantasy novels written by Andrzej Sapkowski. It is the sequel to the 2011 game The Witcher 2: Assassins of Kings and the third main installment in The Witcher's video game series, played in an open world with a third-person perspective.
+
+The game takes place in a fictional fantasy world based on Slavonic mythology. Players control protagonist Geralt of Rivia, a monster slayer for hire known as a Witcher who is looking for his missing adopted daughter on the run from the Wild Hunt, an otherworldly force determined to capture her. Players battle the game's many dangers with weapons and magic, interact with non-player characters, and complete quests to acquire experience points and gold, which are used to increase Geralt's abilities and purchase equipment. Its central story has several endings, determined by the player's choices at certain points in the game." );
+UPDATE products set Description="" where id=6;
+
+DELETE FROM PRODUCTS WHERE ID=6;
+
+
+INSERT INTO products(Name,Img) values("Resident Evil","https://cdn.discordapp.com/attachments/697470483813367821/777891384098291732/DGpalette2.png");
+INSERT INTO products(Name,Img) values("Cyberphunk 2077","https://cdkeyprices.com/images/games/5605179/cover.jpg");
